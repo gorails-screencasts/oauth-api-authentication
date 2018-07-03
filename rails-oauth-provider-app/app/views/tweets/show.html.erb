@@ -1,0 +1,20 @@
+<div class="page-header">
+  <%= link_to tweets_path, class: 'btn btn-default' do %>
+    <span class="glyphicon glyphicon-list-alt"></span>
+    All Tweets
+  <% end %>
+  <%= link_to edit_tweet_path(@tweet), class: 'btn btn-primary' do %>
+    <span class="glyphicon glyphicon-pencil"></span>
+    Edit
+  <% end %>
+  <h1>Show tweet</h1>
+</div>
+
+<dl class="dl-horizontal">
+  <dt>User:</dt>
+  <dd><%= @tweet.user.name %></dd>
+
+  <dt>Body:</dt>
+  <dd><%= @tweet.body %></dd>
+
+</dl>

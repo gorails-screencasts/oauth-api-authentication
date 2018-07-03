@@ -1,0 +1,45 @@
+
+
+
+<div class="row">
+  <div class="col-sm-6">
+    <h1>Tweets</h1>
+  </div>
+
+  <div class="col-sm-6 text-right">
+  <%= link_to new_tweet_path, class: 'btn btn-primary' do %>
+    Add New Tweet
+  <% end %>
+  </div>
+</div>
+
+<div class="table-responsive">
+  <table class="table table-striped table-bordered table-hover">
+    <thead>
+      <tr>
+
+
+            <th>User</th>
+            <th>Body</th>
+
+          <th></th>
+
+      </tr>
+    </thead>
+
+    <tbody>
+      <% @tweets.each do |tweet| %>
+        <%= content_tag :tr, id: dom_id(tweet), class: dom_class(tweet) do %>
+
+
+                      <td><%= tweet.user.name %></td>
+                      <td><%= tweet.body %></td>
+
+
+            <td><%= link_to 'Show', tweet %></td>
+
+        <% end %>
+      <% end %>
+    </tbody>
+  </table>
+</div>
