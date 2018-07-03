@@ -12,7 +12,7 @@ GIT
     gravatar_image_tag (1.2.0)
 
 PATH
-  remote: /Users/chris/code/omniauth-doorkept
+  remote: ../omniauth-doorkept
   specs:
     omniauth-doorkept (0.1.0)
       omniauth-oauth2 (~> 1.5)

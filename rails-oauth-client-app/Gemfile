@@ -83,5 +83,5 @@ gem 'sitemap_generator', '~> 6.0', '>= 6.0.1'
 gem 'webpacker', '~> 3.5', '>= 3.5.3'
 gem 'whenever', require: false
 
-gem 'omniauth-doorkept', path: '/Users/chris/code/omniauth-doorkept'
+gem 'omniauth-doorkept', path: '../omniauth-doorkept'
 gem 'http'
